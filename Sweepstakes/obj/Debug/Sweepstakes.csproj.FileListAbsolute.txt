@@ -1,2 +1,7 @@
 C:\Users\Patrick\Documents\Development\devCodeCamp\Week_07\Sweepstakes\Sweepstakes\obj\Debug\Sweepstakes.csprojAssemblyReference.cache
 C:\Users\Patrick\Documents\Development\devCodeCamp\Week_07\Sweepstakes\Sweepstakes\obj\Debug\Sweepstakes.csproj.CoreCompileInputs.cache
+C:\Users\Patrick\Documents\Development\devCodeCamp\Week_07\Sweepstakes\Sweepstakes\bin\Debug\Sweepstakes.exe.config
+C:\Users\Patrick\Documents\Development\devCodeCamp\Week_07\Sweepstakes\Sweepstakes\bin\Debug\Sweepstakes.exe
+C:\Users\Patrick\Documents\Development\devCodeCamp\Week_07\Sweepstakes\Sweepstakes\bin\Debug\Sweepstakes.pdb
+C:\Users\Patrick\Documents\Development\devCodeCamp\Week_07\Sweepstakes\Sweepstakes\obj\Debug\Sweepstakes.exe
+C:\Users\Patrick\Documents\Development\devCodeCamp\Week_07\Sweepstakes\Sweepstakes\obj\Debug\Sweepstakes.pdb
