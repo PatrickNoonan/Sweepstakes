@@ -15,6 +15,7 @@ namespace Sweepstakes
         public SweepstakesStackManager()
         {
             sweepStack = new Stack<Sweepstakes>();
+            GetSweepstakes();
         }
 
         //does this

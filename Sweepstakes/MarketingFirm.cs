@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    public class MarketingFirm
+    public class MarketingFirm : IManage
     {
         public string factoryChoice;
-        public MarketingFirm(SweepstakesStackManager queue, SweepstakesStackManager stack)
+        public ISweepstakesManager queueOrStack;
+        public MarketingFirm(ISweepstakesManager queueOrStack)
+        {
+            this.queueOrStack = queueOrStack;
+        }
+
+        public void SweepstakesManagerFactory(ISweepstakesManager queueOrStack)
         {
             Console.WriteLine("Would you like to manage the sweepstakes with a queue or a stack?");
             factoryChoice = Console.ReadLine();
@@ -17,20 +23,15 @@ namespace Sweepstakes
             switch (factoryChoice)
             {
                 case "queue":
-                    factoryStyle(queue);
+                    queueOrStack = new SweepstakesQueueManager();
                     break;
                 case "stack":
-                    factoryStyle(stack);
+                    queueOrStack.GetSweepstakes();
                     break;
                 default:
                     Console.WriteLine("meh");
                     break;
             }
-        }
-
-        public void factoryStyle(SweepstakesStackManager queueOrStack)
-        {
-            queueOrStack.GetSweepstakes();
         }
     }
 }

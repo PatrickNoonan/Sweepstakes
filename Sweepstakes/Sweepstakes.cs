@@ -11,6 +11,7 @@ namespace Sweepstakes
         //has this
         public Dictionary<string, string> contestantInfo;
         public UserInterface newUserInterface;
+        public Random random = new Random();
 
         //constructor
         public Sweepstakes(string name)
@@ -19,7 +20,6 @@ namespace Sweepstakes
             newUserInterface = new UserInterface();
             Contestant newContestant = new Contestant();
             RegisterContestant(newContestant);
-
         }
 
         //does this
@@ -30,12 +30,17 @@ namespace Sweepstakes
             contestantInfo.Add("Last Name: ", contestant.lastName);
             contestantInfo.Add("Email Address: ", contestant.emailAddress);
             contestantInfo.Add("Registration Number: ", contestant.registrationNum);
-            PrintContestantInfo(contestant);
-            
+            PickWinner();
+            PrintContestantInfo(contestant);            
         }
         public string PickWinner()
         {
-            return "";
+           int rand = random.Next(0, 100);
+            if (Convert.ToInt32(contestantInfo["Registration Number: "]) == rand)
+            {
+                Console.WriteLine($"Contest number {rand} is the winner!");
+            }
+            return contestantInfo["FirstName: "] + " " + contestantInfo["Last Name: "];
         }
         public void PrintContestantInfo(Contestant contestant)
         {

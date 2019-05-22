@@ -14,7 +14,6 @@ namespace Sweepstakes
             Console.WriteLine("Welcome! What sweepstakes would you like to enter");
             string newName = Console.ReadLine();
             newSweepstakes = new Sweepstakes(newName);
-
         }
     }
 }

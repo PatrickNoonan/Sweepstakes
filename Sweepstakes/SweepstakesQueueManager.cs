@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    public class SweepstakesQeueManager : ISweepstakesManager
+    public class SweepstakesQueueManager : ISweepstakesManager
     {
         //has this
         public Queue<Sweepstakes> sweepQueue;
 
         //ctor
-        public SweepstakesQeueManager()
+        public SweepstakesQueueManager()
         {
             sweepQueue = new Queue<Sweepstakes>();
+            GetSweepstakes();
         }
 
         //does this
