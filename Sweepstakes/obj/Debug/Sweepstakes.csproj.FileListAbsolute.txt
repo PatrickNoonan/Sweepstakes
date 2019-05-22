@@ -1,0 +1,2 @@
+C:\Users\Patrick\Documents\Development\devCodeCamp\Week_07\Sweepstakes\Sweepstakes\obj\Debug\Sweepstakes.csprojAssemblyReference.cache
+C:\Users\Patrick\Documents\Development\devCodeCamp\Week_07\Sweepstakes\Sweepstakes\obj\Debug\Sweepstakes.csproj.CoreCompileInputs.cache

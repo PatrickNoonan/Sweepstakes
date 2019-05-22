@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    public class SweepstakesStackManager : ISweepstakesManager
+    /*public class SweepstakesStackManager : ISweepstakesManager
     {
 
         //use stack data structure
@@ -18,5 +18,5 @@ namespace Sweepstakes
         {
             //Stack.pop(sweepstakes);
         }
-    }
+    }*/
 }

@@ -9,7 +9,6 @@ namespace Sweepstakes
     class UserInterface
     {
         //has this
-        public Contestant NewConstestant;
 
         //constructor
         public UserInterface()
@@ -18,21 +17,20 @@ namespace Sweepstakes
         }
 
         //does this
-        public void GetInfo()
+        public void GetInfo(Contestant contestant)
         {
-            NewConstestant = new Contestant();
             Console.WriteLine("Thank you for entering the sweepstakes!");
             Console.WriteLine("Please enter your first name");
-            NewConstestant.firstName = Console.ReadLine();
+            contestant.firstName = Console.ReadLine();
 
             Console.WriteLine("Please enter your last name");
-            NewConstestant.lastName = Console.ReadLine();
+            contestant.lastName = Console.ReadLine();
 
             Console.WriteLine("Please enter your email address");
-            NewConstestant.emailAddress = Console.ReadLine();
+            contestant.emailAddress = Console.ReadLine();
 
             Console.WriteLine("Please enter your registration number");
-            NewConstestant.registrationNum = Convert.ToInt32(Console.ReadLine());
+            contestant.registrationNum = Console.ReadLine();
         }
     }
 }

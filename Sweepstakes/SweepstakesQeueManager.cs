@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    public class SweepstakesQeueManager : ISweepstakesManager
+    /*public class SweepstakesQeueManager : ISweepstakesManager
     {
         //uses qeue data structure
         public void InsertSweepstakes(Sweepstakes sweepstakes)
@@ -17,5 +17,6 @@ namespace Sweepstakes
         {
             //qeue.deqeue(sweepstakes);
         }
-    }
+        
+    }*/
 }
