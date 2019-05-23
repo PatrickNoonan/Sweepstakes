@@ -40,7 +40,16 @@ namespace Sweepstakes
             {
                 Console.WriteLine($"Contest number {rand} is the winner!");
             }
-            return contestantInfo["FirstName: "] + " " + contestantInfo["Last Name: "];
+            try
+            {
+                return contestantInfo["FirstName: "] + " " + contestantInfo["Last Name: "];
+            }
+            catch (KeyNotFoundException)
+            {
+                Console.WriteLine($"There is no contestant with the registration number of {rand}");
+                Console.ReadLine();
+                return "";
+            }
         }
         public void PrintContestantInfo(Contestant contestant)
         {
@@ -48,6 +57,7 @@ namespace Sweepstakes
             {
                 Console.WriteLine(entry);
             }
+            Console.ReadLine();
         }
     }
 }
