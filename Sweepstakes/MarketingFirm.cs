@@ -15,7 +15,7 @@ namespace Sweepstakes
             this.queueOrStack = queueOrStack;
         }
 
-        public void SweepstakesManagerFactory(ISweepstakesManager queueOrStack)
+        public void SweepstakesManagerFactory()
         {
             Console.WriteLine("Would you like to manage the sweepstakes with a queue or a stack?");
             factoryChoice = Console.ReadLine();
@@ -26,10 +26,10 @@ namespace Sweepstakes
                     queueOrStack = new SweepstakesQueueManager();
                     break;
                 case "stack":
-                    queueOrStack.GetSweepstakes();
+                    queueOrStack = new SweepstakesStackManager();
                     break;
                 default:
-                    Console.WriteLine("meh");
+                    Console.WriteLine("Wrong input");
                     break;
             }
         }

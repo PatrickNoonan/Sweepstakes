@@ -11,9 +11,7 @@ namespace Sweepstakes
         static void Main(string[] args)
         {
             Sweepstakes newSweepstakes;
-            Console.WriteLine("Welcome! What sweepstakes would you like to enter");
-            string newName = Console.ReadLine();
-            newSweepstakes = new Sweepstakes(newName);
+            newSweepstakes = new Sweepstakes("Bob");
         }
     }
 }
